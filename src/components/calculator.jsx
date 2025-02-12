@@ -65,7 +65,7 @@ const handleKeyPress = (event) => {
   if (event.key === 'Enter') {
     event.preventDefault(); // Prevent default behavior (form submission)
     handleSolve(); // Call the handleSolve function to evaluate the expression
-    console.log("Enter key pressed"); // Log when the Enter key is pressed
+    // console.log("Enter key pressed"); // Log when the Enter key is pressed
   }
 };
 
