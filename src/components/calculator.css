@@ -1,0 +1,59 @@
+.input{
+    width:257px;
+    height:48px;
+    background: rgb(231 231 231);
+    border: none;
+    outline: none;
+    text-align: right;
+}
+.btn.btn-1{
+    width:50px ;
+    height: 50px;
+    background: white;
+    border:none ;
+    color: black;
+}
+.btn-darkmode{
+    width:50px ;
+    height: 50px;
+    background: rgb(246, 171, 21);
+    color: black;
+}
+.btn-darkmode:hover{
+    background: rgb(250, 177, 30);
+}
+
+.btn-dark{
+    width:50px ;
+    height: 50px;
+    background: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
+}
+.btn-0{
+width: 116px;
+height: 50px;
+background: white;
+border:none ;
+color: black;
+}
+.btn-0-dark{
+width: 116px;
+height: 50px;
+background: rgb(0, 0, 0);
+border:none ;
+color: rgb(255, 255, 255);
+}
+.btn-sym{
+width: 50px;
+height: 50px;
+background: rgb(72, 72, 72);
+border:none ;
+color: rgb(255, 255, 255);
+}
+.btn-sym:hover{
+background: rgb(0, 0, 0);
+color: white;
+}
+.label{
+    color: black;
+}
