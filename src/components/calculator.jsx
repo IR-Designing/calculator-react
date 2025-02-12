@@ -4,16 +4,13 @@ import { evaluate } from 'mathjs';
 
 
 export default function Calculator(props) {
-
   const [text, settext] = useState("");
 
 
   
 
   const handleButtonClick = (value) => {
-    console.log("Button clicked:", value); // Log the clicked button value
     settext((prevText) => {
-      console.log("Text before update:", prevText); // Log the previous state
       return prevText + value; // Append the button value to the existing text
     });
   };
@@ -42,7 +39,7 @@ const onChange = (event) => {
 
 
 const handleSolve = () => {
-  console.log("Input before evaluation:", text); // Log the input before evaluation
+  
 
   // Check if the expression is valid (non-empty and contains valid characters)
   if (text.trim() === "" || /[^0-9+\-*/().]/.test(text)) {
@@ -52,10 +49,8 @@ const handleSolve = () => {
 
   try {
     const result = evaluate(text); // Evaluate the expression
-    console.log("Result after evaluation:", result); // Log the result
     settext(result.toString()); // Display the result as a string
   } catch (error) {
-    console.error("Error in evaluation:", error); // Log any errors
     settext("Error"); // Display an error if the input is invalid
   }
 };
